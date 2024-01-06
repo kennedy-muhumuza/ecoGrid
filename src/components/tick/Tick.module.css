@@ -1,0 +1,17 @@
+.tick_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #228b22;
+  background-color: #12b886;
+  border-radius: 50%;
+}
+.tick_img {
+  /* color: #fff; */
+  /* background-color: #fff; */
+  width: 1.5rem;
+  height: 1.5rem;
+}

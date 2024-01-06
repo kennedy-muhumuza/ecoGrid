@@ -1,0 +1,15 @@
+.renewable_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 5rem;
+}
+.rechart_container {
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.container {
+}

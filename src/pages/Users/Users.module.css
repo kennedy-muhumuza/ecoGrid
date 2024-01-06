@@ -1,0 +1,68 @@
+.table_container {
+  /* display: flex; */
+  flex-direction: column;
+  margin-left: 3rem;
+  border-left: 1.5px solid var(--color-grey-300);
+  border-right: 1.5px solid var(--color-grey-300);
+  border-top: 1.5px solid var(--color-grey-300);
+  overflow-x: scroll;
+  /* border-bottom: 1px solid var(--color-grey-300); */
+}
+.beatloader {
+  margin-left: 40%;
+}
+
+.download {
+  background-color: var(--bg-color-300);
+  color: var(--color-grey-100);
+  padding: 0.2rem;
+}
+.table_head {
+  background-color: var(--color-grey-100);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  gap: 4rem;
+  padding: 0.7rem;
+}
+.table_row {
+  background-color: var(--color-grey-100);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  gap: 6rem;
+  padding: 0.7rem;
+}
+th {
+  /* display: flex; */
+  border-bottom: 1px solid var(--color-grey-200);
+  text-align: left;
+  background-color: var(--color-grey-100);
+  padding: 0.4rem;
+}
+td {
+  /* display: flex; */
+  border-bottom: 1px solid var(--color-grey-200);
+  text-align: left;
+  background-color: var(--color-grey-50);
+  padding: 0.4rem;
+}
+
+.search_container {
+  display: flex;
+  gap: 28rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+.search_users {
+  padding: 0.4rem;
+  outline: none;
+  border: 1px solid var(--color-grey-200);
+}
+.search_btn {
+  padding: 0.4rem;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--bg-color-300);
+  color: var(--color-grey-100);
+}

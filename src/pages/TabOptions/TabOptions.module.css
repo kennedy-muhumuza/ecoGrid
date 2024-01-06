@@ -1,0 +1,31 @@
+.stations_options {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  /* margin-left: 1rem; */
+  /* cursor: pointer; */
+  /* color: red; */
+  list-style: none;
+  text-decoration: none;
+}
+.station_options:hover {
+  color: var(--bg-color-300);
+  cursor: pointer;
+}
+/* .station_options .active {
+  color: red;
+} */
+
+.active {
+  /* background-color: red; */
+  /* color: var(--bg-color-300); */
+  border-bottom: 2px solid var(--bg-color-300);
+}
+
+.main_station_options:hover {
+  color: var(--bg-color-300);
+  cursor: pointer;
+}
+.main_station_options {
+  font-size: 15px;
+}

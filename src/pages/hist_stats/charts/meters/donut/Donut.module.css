@@ -1,0 +1,9 @@
+.chart_container {
+  margin-left: 3rem;
+  box-shadow: var(--shadow-lg);
+  width: 27rem;
+}
+.donut_header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-grey-300);
+}

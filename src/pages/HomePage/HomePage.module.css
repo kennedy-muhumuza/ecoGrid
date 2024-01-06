@@ -1,0 +1,46 @@
+.container {
+  /* background-color: #ced4da;
+  background-color: #fff; */
+  background-color: var(--color-brand-500);
+  /* background-color: var(--btn-bg-color);
+  background-color: var(--bg-color-50); */
+}
+
+.video-background {
+  position: relative;
+  width: 100%; /* Set the width to cover the entire component */
+  height: 100vh; /* Set the height to cover the entire viewport height */
+
+  /* Optional: You can further style the video background */
+  overflow: hidden; /* Hide any video overflow beyond the component */
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(
+    0,
+    0,
+    0,
+    0.01
+  ); /* Add a semi-transparent background to the content */
+  /* color: white; */
+  background: rgba(99, 102, 241, 0.3);
+  top: 0;
+  /* background-color: red; */
+  padding: 0.2rem 0;
+
+  margin-top: 0;
+}

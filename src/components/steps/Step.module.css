@@ -1,0 +1,35 @@
+.progress_container {
+  /* background-color: blueviolet; */
+  /* margin: 2rem; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.progress_figure {
+  color: #ced4da;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+.active {
+  background-color: #ff1694;
+  background-color: var(--btn-bg-color);
+}
+.inactive {
+  background-color: var(--color-grey-300);
+  color: #fff;
+}
+.progress_line {
+  width: 4rem;
+  background-color: blue;
+  background-color: var(--color-grey-300);
+  height: 0.1rem;
+}

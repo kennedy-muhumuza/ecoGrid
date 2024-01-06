@@ -1,0 +1,5 @@
+.advanced_map_container {
+  width: 15rem;
+  height: 15rem;
+  overflow: auto;
+}

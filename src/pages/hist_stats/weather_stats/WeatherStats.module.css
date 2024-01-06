@@ -1,0 +1,9 @@
+.weather_container {
+  /* background-color: red; */
+  display: flex;
+  gap: 2rem;
+}
+/* .donut_header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-grey-300);
+} */

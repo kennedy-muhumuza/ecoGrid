@@ -1,0 +1,35 @@
+.form_container {
+  width: 25%;
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  /* margin-left: 30rem; */
+  margin-left: 40%;
+  border-radius: 0.5rem;
+  /* background-color: #ced4da; */
+  background-color: #fff;
+  /* box-shadow: var(--shadow-md); */
+}
+.links {
+  display: flex;
+  gap: 8rem;
+}
+.error_msg {
+  width: 25%;
+  top: 2.5rem;
+  position: absolute;
+  margin-left: 39%;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border-left: solid rgb(209, 35, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: rgb(90, 8, 8);
+}
+.login {
+  cursor: pointer;
+}

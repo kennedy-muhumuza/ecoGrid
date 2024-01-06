@@ -1,0 +1,145 @@
+.error {
+  color: red;
+}
+.position_btn {
+  padding: 0.4rem;
+  border: 0;
+  background-color: var(--bg-color-300);
+  color: var(--color-grey-100);
+}
+.location {
+  color: var(--bg-color-300);
+}
+.geolocation_card {
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: fit-content;
+  height: auto;
+}
+.fossil_controls {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1rem;
+}
+.fossil_control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.optimal {
+  color: green;
+  font-weight: 700;
+}
+.fossil_controls_container {
+  display: flex;
+}
+.fossil_controls_two {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1rem;
+}
+.fossil_controls_three {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1rem;
+}
+.fossil_controls_four {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1rem;
+}
+.fossil_controls_five {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  border: 1px solid var(--color-grey-400);
+  padding: 1rem;
+}
+.hep_five_control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.hep_one_control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.set_btn {
+  padding: 0.4rem;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--bg-color-300);
+  color: var(--color-grey-100);
+}
+.active {
+  border-bottom: 2px solid var(--bg-color-300);
+}
+.input_field {
+  padding: 0.4rem;
+  outline: none;
+  border: 1px solid var(--color-grey-200);
+}
+.set_container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hep_two_control {
+  width: 100%;
+  background-color: green;
+  padding: 10%;
+  height: 80%;
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.hep_three_control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.hep_four_control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-grey-400);
+}
+.tab_container {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}

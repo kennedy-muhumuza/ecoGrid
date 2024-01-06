@@ -1,0 +1,9 @@
+.dumb_bell_chart_container {
+  box-shadow: var(--shadow-lg);
+  padding: 1rem;
+}
+.dumb_bell_header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-grey-300);
+  margin-bottom: 2rem;
+}

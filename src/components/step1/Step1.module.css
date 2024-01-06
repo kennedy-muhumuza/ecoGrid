@@ -1,0 +1,116 @@
+.signup_header_container {
+  display: flex;
+  gap: 8rem;
+}
+.input_field {
+  padding: 0.5rem;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid var(--color-grey-300);
+}
+.email_container {
+  display: flex;
+  flex-direction: column;
+}
+.password_container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.login-eye-icon {
+  color: hsl(0, 0%, 0%);
+  color: var(--color-grey-500);
+  position: absolute;
+  right: 38%;
+  top: 42%;
+  padding-right: 2px;
+}
+.password_msg {
+  padding: 0 3px;
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--color-grey-500);
+  font-weight: 500;
+}
+.next_btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  background-color: #228b22;
+  background-color: var(--btn-bg-color);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  color: var(--color-grey-50);
+}
+.or_container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.or_line {
+  width: 14rem;
+  background-color: blue;
+  background-color: var(--color-grey-300);
+  height: 0.1rem;
+}
+.or {
+  border: 1.5px solid var(--color-grey-300);
+  border-radius: 5px;
+  padding: 0.1rem;
+  color: var(--color-grey-400);
+  font-size: 12px;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+.google_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #900d09;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.fb_logo {
+  border-radius: 50%;
+  border: 2px solid #3944bc;
+  /* background-color: red; */
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.linked_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #3944bc;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.g_logo {
+  width: 1.5rem;
+}
+.user_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+}
+.user {
+  color: var(--color-grey-500);
+}

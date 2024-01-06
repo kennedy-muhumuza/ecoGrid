@@ -1,0 +1,24 @@
+.chart_container {
+  box-shadow: var(--shadow-lg);
+}
+.total_chart_container {
+  box-shadow: var(--shadow-lg);
+}
+.donut_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  /* background-color: red; */
+  border-bottom: 1px solid var(--color-grey-300);
+  margin-bottom: 1rem;
+}
+.total_donut_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  /* background-color: red; */
+  border-bottom: 1px solid var(--color-grey-300);
+  margin-bottom: 1rem;
+}

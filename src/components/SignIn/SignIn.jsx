@@ -14,6 +14,7 @@ import { logIn } from "../../store/actions/auth";
 import { storeToken } from "../../store/actions/token";
 import { toast } from "react-hot-toast";
 import { playAudio } from "../../store/actions/audio";
+import { nextStep } from "../../store/actions/step";
 
 // import { collection, getDoc } from "firebase/firestore";
 
@@ -105,6 +106,9 @@ export const SignIn = () => {
       console.error(err);
     }
   };
+  const signUpHandler = () => {
+    dispatch(nextStep(1));
+  };
 
   return (
     <>
@@ -168,7 +172,7 @@ export const SignIn = () => {
         </div>
         <div className={styles["user_container"]}>
           <p className={styles["user"]}>
-            Need an account? <a href="">SIGNUP</a>
+            Need an account? <b onClick={signUpHandler}>SIGNUP</b>
             {/* <button onClick={logOut}>LOGOUT</button> */}
           </p>
         </div>

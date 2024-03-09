@@ -6,7 +6,6 @@ export const AppLayout = () => {
     <>
       <Header />
       <main>
-        {/* <p>Welcome to the logged in page</p> */}
         <Outlet />
       </main>
     </>

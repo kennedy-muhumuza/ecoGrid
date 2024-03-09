@@ -19,7 +19,7 @@ import { playAudio } from "../../../store/actions/audio";
 
 function LogoutDropDown() {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const dispatch = useDispatch();
   const logOutHandler = () => {
     dispatch(logOut());
@@ -29,7 +29,7 @@ function LogoutDropDown() {
     toast.success("Logged Out Successfully");
     dispatch(playAudio("loggedout.mp3"));
   };
-  const clickHandler = (item) => {
+  const clickHandler = (item) => { 
     // setTab(item);
     console.log("clicked");
     // setClicked(true);
@@ -65,7 +65,7 @@ function LogoutDropDown() {
             </li>
           ))}
           <li className={styles["logout_container"]} onClick={logOutHandler}>
-            <TbLogout /> 
+            <TbLogout />
             Logout
           </li>
         </ul>

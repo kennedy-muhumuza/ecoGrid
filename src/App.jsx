@@ -74,7 +74,6 @@ const App = () => {
                 <Route path="historical-data" element={<Historical />} />
                 <Route path="real-time-data" element={<RealTime />} />
                 <Route path="predictions" element={<Predictions />} />
-                {/* <Route path="charging-profiles" element={<ChargingProfile />} /> */}
                 <Route path="security-report" element={<SecurityReport />} />
                 <Route path="notification" element={<Notification />} />
                 <Route path="profile" element={<Profile />} />
@@ -87,6 +86,7 @@ const App = () => {
                   element={<ChargingProfiles />}
                 />
                 <Route path="*" element={<Main />} />
+                {/* <Route path="charging-profiles" element={<ChargingProfile />} /> */}
                 {/* <Route path="*" element={<AdminPage />} /> */}
               </Route>
             </>

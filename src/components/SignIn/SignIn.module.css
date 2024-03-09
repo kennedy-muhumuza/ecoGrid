@@ -19,6 +19,7 @@
   flex-direction: column;
 }
 .password_container {
+  position: relative;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -27,14 +28,16 @@
   color: hsl(0, 0%, 0%);
   color: var(--color-grey-500);
   position: absolute;
-  right: 38%;
-  top: 34%;
+  right: 0.3rem;
+  top: 2.8rem;
+  cursor: pointer;
   padding-right: 2px;
 }
 .next_btn {
   margin-top: 0.8rem;
   width: 100%;
   padding: 0.5rem;
+  cursor: pointer;
   border: 0;
   background-color: var(--btn-bg-color);
   /* box-shadow: var(--shadow-lg); */
@@ -89,6 +92,7 @@
   border-radius: 50%;
   border: 2px solid #900d09;
   width: 2rem;
+  cursor: pointer;
   height: 2rem;
 }
 .fb_logo {
@@ -104,18 +108,21 @@
   justify-content: center;
   border-radius: 50%;
   border: 2px solid #3944bc;
-
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
 }
 .g_logo {
   width: 1.5rem;
+  cursor: pointer;
 }
 .user_container {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: center;
 }
 .user {
   color: var(--color-grey-500);
+  cursor: pointer;
 }

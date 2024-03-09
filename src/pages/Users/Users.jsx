@@ -76,7 +76,7 @@ export const Users = () => {
           <button className={styles["search_btn"]} onClick={searchHandler}>
             Search
           </button>
-        </div>
+        </div> 
 
         <button
           onClick={() => exportDataToJSON("users")}

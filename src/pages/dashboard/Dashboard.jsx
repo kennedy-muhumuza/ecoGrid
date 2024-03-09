@@ -12,7 +12,7 @@ import { StatisticsChart } from "../../widgets/charts/statistics-chart";
 // } from "@/data";
 
 import statisticsChartsDataMain from "../../data/statistics-charts-data";
-import Chat from "../chat/Chat";
+
 // import { AdminHeader } from "../../components/adminHeader/AdminHeader";
 // import { Footer } from "../../components/UI/footer/Footer";
 // import styles from "./AdminPage.module.css";
@@ -41,7 +41,7 @@ export function Dashboard() {
         ))}
       </div> */}
       {/* --------------------------------------------------------this below-------------------------- */}
-      {/* <div className="mb-6 grid grid-cols-1 gap-y-12 gap-x-6 md:grid-cols-3 xl:grid-cols-3 ">
+      <div className="mb-6 grid grid-cols-1 gap-y-12 gap-x-6 md:grid-cols-3 xl:grid-cols-3 ">
         {statisticsChartsDataMain.map((props) => (
           <StatisticsChart
             key={props.title}
@@ -57,10 +57,10 @@ export function Dashboard() {
             }
           />
         ))}
-          </div>*/}
-      <div className="h-12 w-12">
-        <Chat />
       </div>
+      {/* <div className="h-12 w-12">
+        <Chat />
+      </div> */}
 
       {/* <Footer /> */}
     </div>

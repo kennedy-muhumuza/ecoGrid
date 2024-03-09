@@ -18,6 +18,7 @@ export const SignUp = () => {
   const loginHandler = () => {
     dispatch(nextStep(4));
   };
+
   return (
     <>
       {/* {errorMsg ? <p className={styles["error_msg"]}>{errorMsg}</p> : null} */}

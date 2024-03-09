@@ -28,6 +28,9 @@ export const Step1 = () => {
     setShowPassword(!showPassword);
     setShowShowEyeIcon(!showEyeIcon);
   };
+  const loginHandler = () => {
+    dispatch(nextStep(4));
+  };
 
   const nextHandler = async (e) => {
     e.preventDefault();
@@ -135,7 +138,7 @@ export const Step1 = () => {
         </div>
         <div className={styles["user_container"]}>
           <p className={styles["user"]}>
-            Already a user? <a href="#">LOGIN</a>
+            Already a user? <b onClick={loginHandler}>LOGIN</b>
           </p>
         </div>
       </form>

@@ -13,11 +13,12 @@ import LogoutDropDown from "../../ui/drop_downs/logout_drop_down/LogoutDropDown"
 const StyledHeader = styled.header`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 0;
   top: 0;
   margin-right: 0;
-  gap: 37rem;
+  padding: 0 4rem;
+  /* gap: 37rem; */
   background-color: var(--color-grey-0);
   background-color: var(--bg-color-300);
   color: var(--color-grey-100);

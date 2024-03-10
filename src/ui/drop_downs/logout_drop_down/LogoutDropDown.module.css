@@ -1,6 +1,8 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-right: 1rem;
+  z-index: 10000;
 }
 
 .dropdown-button {

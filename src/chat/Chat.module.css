@@ -104,9 +104,8 @@
 }
 /* -----------------------------------------------------------New section------------------------------------- */
 .chat-container {
-  /* max-width: 400px; */
-  /* position: absolute; */
   background-color: #fff;
+  /* background-color: green; */
   width: 90%;
   margin: 20px auto;
   border: 1px solid #ccc;
@@ -115,6 +114,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: var(--shadow-lg);
 }
+
 .tab {
   position: relative;
   background-color: var(--main-color-100);
@@ -128,12 +128,18 @@
   box-shadow: var(--shadow-lg);
   /* justify-content: space-between; */
 }
+
+.tab .close-icon {
+  /* cursor: pointer; */
+  /* background-color: green; */
+}
+
 .tab_option {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* gap: 0.2rem; */
   /* background-color: var(); */
 }
@@ -154,14 +160,15 @@
 
 .close-icon {
   position: absolute;
-  cursor: pointer;
   right: 1rem;
   top: 0.4rem;
+  /* background-color: green; */
+  cursor: pointer;
 }
 
-.close-icon.dark {
+/* .close-icon.dark {
   color: #000;
-}
+} */
 .input_field {
   outline: none;
 }
@@ -207,6 +214,21 @@
   scrollbar-width: thin; /* For Firefox */
 }
 
+.voice_container {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px; */
+  background-color: #fff;
+  border-top: 2px solid var(--color-grey-200);
+  box-shadow: var(--shadow-lg);
+  /* background-color: green; */
+}
+
+.voice-icon {
+  color: #000;
+  font-size: 2rem;
+}
 div.chat-messages::-webkit-scrollbar {
   width: 6px;
 }
@@ -364,7 +386,12 @@ div.chat-messages::-webkit-scrollbar-thumb {
   justify-content: center;
   color: #000;
   border-radius: 50%;
+  cursor: pointer;
 }
+
+/* .close-icon {
+  cursor: pointer;
+} */
 
 .active-indicator {
   position: absolute;

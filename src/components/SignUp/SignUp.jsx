@@ -1,7 +1,7 @@
 import { Step1 } from "../step1/Step1";
 import { Step2 } from "../step2/Step2";
 import { Step3 } from "../step3/Step3";
-import { Step } from "../steps/Step";
+import { Step } from "../steps/Step"; 
 import styles from "./SignUp.module.css";
 import { SignIn } from "../SignIn/SignIn";
 import { useDispatch, useSelector } from "react-redux";

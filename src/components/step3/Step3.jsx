@@ -18,10 +18,10 @@ import { storeToken } from "../../store/actions/token";
 // import { auth, createUserWithEmailAndPassword } from "../../firebase";
 
 export const Step3 = () => {
-  const [education, setEducation] = useState("");
+  const [department, setDepartment] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [organization, setOrganization] = useState("");
-  const [yearsOfExperience, setYearsOfExperience] = useState("");
+  // const [yearsOfExperience, setYearsOfExperience] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   // const password = useSelector((state) => state.register.password);
@@ -43,10 +43,10 @@ export const Step3 = () => {
     contact: userObject.contact,
     country: userObject.country,
     userName: userObject.userName,
-    education: education,
+    education: department,
     jobTitle: jobTitle,
     organization: organization,
-    yearsOfExperience: yearsOfExperience,
+    // yearsOfExperience: yearsOfExperience,
     createdDate: new Date().toDateString(),
     createdTime: new Date().toLocaleTimeString(),
   };
@@ -58,15 +58,13 @@ export const Step3 = () => {
   const signUpHandler = async (e) => {
     try {
       e.preventDefault();
-      if (!education || !jobTitle || !organization || !yearsOfExperience) {
+      if (!department || !jobTitle || !organization) {
         toast.error("Empty fields⛔");
         // dispatch(showErrorMsg("Empty fields⛔"));
         return;
       }
       setIsLoading(true);
-      dispatch(
-        updateStep3(education, jobTitle, organization, yearsOfExperience)
-      );
+      dispatch(updateStep3(department, jobTitle, organization, ""));
       // dispatch(showErrorMsg(""));
       // const { user } = await auth.createUserWithEmailAndPassword(
 
@@ -108,11 +106,20 @@ export const Step3 = () => {
     <>
       <form className={styles["form_container"]}>
         <div className={styles["field_container"]}>
-          <label>Education</label>
+          <label>Organization</label>
           <input
             type="text"
-            value={education}
-            onChange={(e) => setEducation(e.target.value)}
+            value={organization}
+            onChange={(e) => setOrganization(e.target.value)}
+            className={styles["input_field"]}
+          />
+        </div>
+        <div className={styles["field_container"]}>
+          <label>Department</label>
+          <input
+            type="text"
+            value={department}
+            onChange={(e) => setDepartment(e.target.value)}
             className={styles["input_field"]}
           />
         </div>
@@ -125,16 +132,8 @@ export const Step3 = () => {
             className={styles["input_field"]}
           />
         </div>
-        <div className={styles["field_container"]}>
-          <label>Organization</label>
-          <input
-            type="text"
-            value={organization}
-            onChange={(e) => setOrganization(e.target.value)}
-            className={styles["input_field"]}
-          />
-        </div>
-        <div className={styles["field_container"]}>
+
+        {/* <div className={styles["field_container"]}>
           <label>Years of Experience</label>
           <input
             type="text"
@@ -142,7 +141,7 @@ export const Step3 = () => {
             onChange={(e) => setYearsOfExperience(e.target.value)}
             className={styles["input_field"]}
           />
-        </div>
+        </div> */}
         <div className={styles["back"]}>
           <button onClick={signUpHandler} className={styles["signup_btn"]}>
             {isLoading ? <BeatLoader color="#36d7b7" /> : "SIGNUP"}

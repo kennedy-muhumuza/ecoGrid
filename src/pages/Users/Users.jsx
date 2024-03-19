@@ -76,7 +76,7 @@ export const Users = () => {
           <button className={styles["search_btn"]} onClick={searchHandler}>
             Search
           </button>
-        </div> 
+        </div>
 
         <button
           onClick={() => exportDataToJSON("users")}
@@ -94,7 +94,7 @@ export const Users = () => {
             <th>User name</th>
             <th>Email</th>
             <th>Contact</th>
-            <th>country</th>
+            {/* <th>country</th> */}
             <th>Role</th>
             <th>Organization</th>
             <th>created date</th>
@@ -107,7 +107,7 @@ export const Users = () => {
               <td>{item.userName}</td>
               <td>{item.email}</td>
               <td>{item.contact ? item.contact : item.phoneNumber}</td>
-              <td>{item.country}</td>
+              {/* <td>{item.country}</td> */}
               <td>{item.jobTitle ? item.jobTitle : item.role}</td>
               <td>{item.organization}</td>
               <td>{item.createdDate}</td>

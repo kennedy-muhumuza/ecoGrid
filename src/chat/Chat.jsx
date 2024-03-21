@@ -48,9 +48,28 @@ const Chat = ({ setBotActive }) => {
     var voices = window.speechSynthesis.getVoices();
 
     // Select a desired voice (you can customize this part)
-    var desiredVoice = voices.find(
-      (voice) => voice.voiceURI === "Google US English"
-    );
+    // var desiredVoice = voices.find(
+    //   (voice) => voice.voiceURI === "Google US English"
+    // );
+
+    var desiredVoice =
+      voices.find(
+        (voice) =>
+          voice.voiceURI.includes("Google") &&
+          voice.name === "Google US English"
+      ) ||
+      voices.find(
+        (voice) =>
+          voice.voiceURI.includes("Google") &&
+          voice.name.includes("Female") &&
+          voice.lang.includes("en-US")
+      ) ||
+      voices.find((voice) => voice.voiceURI === "Google US English");
+
+    // var desiredVoice = voices.find(
+    //   (voice) =>
+    //     voice.voiceURI.includes("Google") && voice.name === "Google US English"
+    // );
 
     // Set the selected voice
     msg.voice = desiredVoice;
@@ -135,12 +154,46 @@ const Chat = ({ setBotActive }) => {
     const match = inputString.match(namePattern);
     return match ? match[1] : null;
   }
+  const introduceUser = (userInput) => {
+    // const nameRegex =
+    //   /(?:hey\s*ecoGrid\s*,?\s*say\s*(?:hi|hello)\s*to\s*|say\s*(?:hi|hello)\s*to\s*\s*)(\w+)/i;
+    const nameRegex =
+      /(?:hey\s*(?:say\s*)?(?:hi|hello)\s*to\s*|say\s*(?:hi|hello)\s*to\s*\s*)(\w+)/i;
+
+    const match = userInput.match(nameRegex);
+    return match ? match[1] : null;
+  };
 
   function calculateResponse(inputString) {
     const splitMessage = inputString.toLowerCase().split(/\s+|[,;?!.-]\s*/);
     const scoreList = [];
 
+    const introducedUserName = introduceUser(inputString);
     const userName = extractUserName(inputString);
+    // If a name is found in the user input, generate a response
+    if (introducedUserName) {
+      const name = introducedUserName;
+      // const responses = [
+      // `Hey ${name}, it's nice knowing you. I am the EcoGrid assistant and I am here to help with all matters regarding the EcoGrid system.`,
+      // `Hey ${name}, it's great to meet you. I'm the EcoGrid assistant, ready to assist you with anything related to managing data generated from renewables or its storage and distribution.`,
+      //   // Add more creative responses here
+      // ];
+      const responses = [
+        `Hey ${name}, it's nice knowing you. I am the EcoGrid assistant and I am here to help with all matters regarding the EcoGrid system.`,
+        `Hey ${name}, it's great to meet you. I'm the EcoGrid assistant, ready to assist you with anything related to managing data generated from renewables or its storage and distribution.`,
+        `Hey ${name}, welcome! I'm your EcoGrid companion, here to navigate you through the fascinating world of renewable energy management.`,
+        `Ahoy ${name}! It's a pleasure to make your acquaintance. I'm the EcoGrid genie, granting your wishes for sustainable energy management.`,
+        `Greetings ${name}! I'm the EcoGrid guru, here to enlighten you on all things related to harnessing the power of renewables.`,
+        `Salutations ${name}! As your EcoGrid ally, I'm here to tackle any challenges you may face in the realm of renewable energy optimization.`,
+        `Hello ${name}, delighted to meet you! I'm the EcoGrid virtuoso, orchestrating the symphony of renewable energy solutions.`,
+      ];
+
+      // Randomly select a response from the array
+      const randomResponse =
+        responses[Math.floor(Math.random() * responses.length)];
+
+      return randomResponse;
+    }
 
     if (userName) {
       const randomResponses = [
@@ -362,7 +415,7 @@ const Chat = ({ setBotActive }) => {
       //   mode: "cors",
       // });
       // const responseData = await response.json(); // Parse the JSON content
-
+      introduceUser(event.results[last][0].transcript);
       if (
         ["play", "song", "sing"].some((keyword) =>
           event.results[last][0].transcript.includes(keyword)
@@ -437,6 +490,20 @@ const Chat = ({ setBotActive }) => {
       ];
       const forbiddenWords = [
         "date",
+        "fossil",
+        "environment",
+        "prediction",
+        "historical",
+        "data",
+        "distributed",
+        "distribution",
+        "energy",
+        "stored",
+        "storage",
+        "renewable",
+        "energy",
+        "carbon",
+        "footprint",
         "today",
         "name",
         "you",

@@ -13,6 +13,105 @@ export const botJsonData = [
     required_words: [],
   },
   {
+    response_type: "fossils",
+    user_input: ["fossil", "fuels"],
+    bot_response: [
+      "Fossil fuels, such as coal, oil, and natural gas, are non-renewable resources formed over millions of years from the remains of ancient organisms. They are the primary source of global energy but contribute significantly to carbon emissions and environmental degradation.",
+      "The use of fossil fuels for energy production is a major contributor to air and water pollution, habitat destruction, and climate change. Transitioning to renewable energy sources is essential for reducing our reliance on fossil fuels and mitigating their environmental impact.",
+    ],
+    required_words: ["fossil"],
+  },
+  {
+    response_type: "environmental_conservation",
+    user_input: ["environment", "conservation", "EcoGrid"],
+    bot_response: [
+      "EcoGrid plays a crucial role in environmental conservation by facilitating the integration of renewable energy sources into the grid, reducing reliance on fossil fuels, and minimizing carbon emissions.",
+      "Through smart energy management and optimization, EcoGrid helps preserve natural resources, protect ecosystems, and mitigate the impacts of climate change. It's a key tool for building a sustainable future.",
+    ],
+    required_words: ["environment"],
+  },
+  {
+    response_type: "carbon_footprint",
+    user_input: ["carbon", "footprint"],
+    bot_response: [
+      "A carbon footprint is the total amount of greenhouse gases, primarily carbon dioxide, emitted directly or indirectly by human activities, such as transportation, energy production, and industrial processes.",
+      "Reducing your carbon footprint is essential for combating climate change and preserving the environment. It involves adopting sustainable practices, such as using renewable energy, conserving energy, and minimizing waste.",
+    ],
+    required_words: ["carbon", "footprint"],
+  },
+  {
+    response_type: "carbon_footprint",
+    user_input: ["carbon"],
+    bot_response: [
+      "A carbon footprint is the total amount of greenhouse gases, primarily carbon dioxide, emitted directly or indirectly by human activities, such as transportation, energy production, and industrial processes.",
+      "Reducing your carbon footprint is essential for combating climate change and preserving the environment. It involves adopting sustainable practices, such as using renewable energy, conserving energy, and minimizing waste.",
+    ],
+    required_words: ["footprint"],
+  },
+  {
+    response_type: "renewable_energy",
+    user_input: ["renewable", "energy"],
+    bot_response: [
+      "Renewable energy is energy that is collected from renewable resources, which are naturally replenished on a human timescale, such as sunlight, wind, rain, tides, waves, and geothermal heat.",
+      "Renewable energy sources are crucial for reducing greenhouse gas emissions and mitigating climate change. They offer a sustainable alternative to fossil fuels.",
+    ],
+    required_words: ["renewable", "energy"],
+  },
+  {
+    response_type: "storage",
+    user_input: ["storage", "energy", "EcoGrid", "system"],
+    bot_response: [
+      "The EcoGrid storage system utilizes advanced technologies to store excess energy generated from renewable sources. It helps balance supply and demand, ensuring efficient energy management.",
+      "In the EcoGrid system, energy storage plays a vital role in maintaining grid stability and reliability. It enables better integration of intermittent renewable energy sources.",
+    ],
+    required_words: ["storage"],
+  },
+  {
+    response_type: "storage",
+    user_input: ["stored", "energy", "EcoGrid", "system"],
+    bot_response: [
+      "The EcoGrid storage system utilizes advanced technologies to store excess energy generated from renewable sources. It helps balance supply and demand, ensuring efficient energy management.",
+      "In the EcoGrid system, energy storage plays a vital role in maintaining grid stability and reliability. It enables better integration of intermittent renewable energy sources.",
+    ],
+    required_words: ["stored"],
+  },
+  {
+    response_type: "distribution",
+    user_input: ["distribution", "energy", "distributed"],
+    bot_response: [
+      "Energy distribution involves the transmission and delivery of electricity from power plants to consumers. It encompasses the entire network of power lines, substations, and transformers.",
+      "Efficient energy distribution is essential for ensuring reliable electricity supply to homes, businesses, and industries. Smart grid technologies are revolutionizing the way energy is distributed.",
+    ],
+    required_words: ["distribution", "energy"],
+  },
+  {
+    response_type: "distribution",
+    user_input: ["distribution", "energy", "distributed", "how"],
+    bot_response: [
+      "Energy distribution involves the transmission and delivery of electricity from power plants to consumers. It encompasses the entire network of power lines, substations, and transformers.",
+      "Efficient energy distribution is essential for ensuring reliable electricity supply to homes, businesses, and industries. Smart grid technologies are revolutionizing the way energy is distributed.",
+    ],
+    required_words: ["distributed"],
+  },
+  {
+    response_type: "historical_data",
+    user_input: ["historical", "data"],
+    bot_response: [
+      "Historical energy data provides valuable insights into past consumption patterns, generation trends, and grid performance. Analyzing historical data helps identify opportunities for optimization.",
+      "By analyzing historical energy data, we can identify usage patterns, forecast future demand, and optimize energy management strategies. It's a crucial aspect of building a sustainable energy system.",
+    ],
+    required_words: ["historical", "data"],
+  },
+  {
+    response_type: "prediction",
+    user_input: ["prediction", "energy", "trends"],
+    bot_response: [
+      "Predicting energy trends involves forecasting future energy demand, generation capacity, and market dynamics. It helps utilities and policymakers make informed decisions for a sustainable energy future.",
+      "Advanced modeling techniques and data analytics are used to predict energy trends, taking into account factors such as population growth, technological advancements, and policy changes.",
+    ],
+    required_words: ["prediction"],
+  },
+  {
     response_type: "tell",
     user_input: ["tell", "me", "about", "yourself"],
     bot_response: [

@@ -266,8 +266,11 @@ div.chat-messages::-webkit-scrollbar-thumb {
   color: #fff;
   background-color: var(--user-msg);
   background-color: var(--main-color-1);
+  background-color: #007bff;
   padding: 0.5rem 1rem;
   border-radius: 10px;
+  color: #000;
+  color: #fff;
 }
 .time {
   align-self: flex-start;
